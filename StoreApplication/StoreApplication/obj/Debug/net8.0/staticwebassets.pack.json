@@ -1,0 +1,653 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StoreApplication.bundle.scp.css",
+      "PackagePath": "staticwebassets\\StoreApplication.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\css\\materialize.css",
+      "PackagePath": "staticwebassets\\css\\materialize.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\css\\mdb.min.css",
+      "PackagePath": "staticwebassets\\css\\mdb.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Bold.eot",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Bold.ttf",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Bold.woff",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Bold.woff2",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Light.eot",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Light.eot"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Light.ttf",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Light.woff",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Light.woff2",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Light.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Medium.eot",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Medium.eot"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Medium.ttf",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Medium.woff",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Medium.woff"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Medium.woff2",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Medium.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Regular.eot",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Regular.ttf",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Regular.woff",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Regular.woff2",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Thin.eot",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Thin.eot"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Thin.ttf",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Thin.woff",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Thin.woff"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\font\\roboto\\Roboto-Thin.woff2",
+      "PackagePath": "staticwebassets\\font\\roboto\\Roboto-Thin.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\accordion.png",
+      "PackagePath": "staticwebassets\\img\\accordion.png"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\client1.jpg",
+      "PackagePath": "staticwebassets\\img\\client1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\client2.jpg",
+      "PackagePath": "staticwebassets\\img\\client2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\counterbg.jpg",
+      "PackagePath": "staticwebassets\\img\\counterbg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\flipcker1.jpg",
+      "PackagePath": "staticwebassets\\img\\flipcker1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\flipcker2.jpg",
+      "PackagePath": "staticwebassets\\img\\flipcker2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\flipcker3.jpg",
+      "PackagePath": "staticwebassets\\img\\flipcker3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\flipcker4.jpg",
+      "PackagePath": "staticwebassets\\img\\flipcker4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\homebenner.jpg",
+      "PackagePath": "staticwebassets\\img\\homebenner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\joinbg.jpg",
+      "PackagePath": "staticwebassets\\img\\joinbg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\lightbox\\default-skin.png",
+      "PackagePath": "staticwebassets\\img\\lightbox\\default-skin.png"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\lightbox\\default-skin.svg",
+      "PackagePath": "staticwebassets\\img\\lightbox\\default-skin.svg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\lightbox\\preloader.gif",
+      "PackagePath": "staticwebassets\\img\\lightbox\\preloader.gif"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\loading.gif",
+      "PackagePath": "staticwebassets\\img\\loading.gif"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\overlays\\01.png",
+      "PackagePath": "staticwebassets\\img\\overlays\\01.png"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\overlays\\02.png",
+      "PackagePath": "staticwebassets\\img\\overlays\\02.png"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\overlays\\03.png",
+      "PackagePath": "staticwebassets\\img\\overlays\\03.png"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\overlays\\04.png",
+      "PackagePath": "staticwebassets\\img\\overlays\\04.png"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\overlays\\05.png",
+      "PackagePath": "staticwebassets\\img\\overlays\\05.png"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\overlays\\06.png",
+      "PackagePath": "staticwebassets\\img\\overlays\\06.png"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\overlays\\07.png",
+      "PackagePath": "staticwebassets\\img\\overlays\\07.png"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\overlays\\08.png",
+      "PackagePath": "staticwebassets\\img\\overlays\\08.png"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\overlays\\09.png",
+      "PackagePath": "staticwebassets\\img\\overlays\\09.png"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\pf1.jpg",
+      "PackagePath": "staticwebassets\\img\\pf1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\pf2.jpg",
+      "PackagePath": "staticwebassets\\img\\pf2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\pf3.jpg",
+      "PackagePath": "staticwebassets\\img\\pf3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\pf4.jpg",
+      "PackagePath": "staticwebassets\\img\\pf4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\pf5.jpg",
+      "PackagePath": "staticwebassets\\img\\pf5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\pf6.jpg",
+      "PackagePath": "staticwebassets\\img\\pf6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\pro1.png",
+      "PackagePath": "staticwebassets\\img\\pro1.png"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\pro2.png",
+      "PackagePath": "staticwebassets\\img\\pro2.png"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\team1.jpg",
+      "PackagePath": "staticwebassets\\img\\team1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\team2.jpg",
+      "PackagePath": "staticwebassets\\img\\team2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\team3.jpg",
+      "PackagePath": "staticwebassets\\img\\team3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\team4.jpg",
+      "PackagePath": "staticwebassets\\img\\team4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\works1.png",
+      "PackagePath": "staticwebassets\\img\\works1.png"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\works2.png",
+      "PackagePath": "staticwebassets\\img\\works2.png"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\works3.png",
+      "PackagePath": "staticwebassets\\img\\works3.png"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\img\\works4.png",
+      "PackagePath": "staticwebassets\\img\\works4.png"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\js\\accordion.js",
+      "PackagePath": "staticwebassets\\js\\accordion.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\js\\jquery-2.2.3.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-2.2.3.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\js\\jquery.magnific-popup.js",
+      "PackagePath": "staticwebassets\\js\\jquery.magnific-popup.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\js\\jquery.mixitup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.mixitup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\js\\materialize.js",
+      "PackagePath": "staticwebassets\\js\\materialize.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\js\\mdb.min.js",
+      "PackagePath": "staticwebassets\\js\\mdb.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\js\\plugins.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\js\\tether.min.js",
+      "PackagePath": "staticwebassets\\js\\tether.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\js\\wow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\README.txt",
+      "PackagePath": "staticwebassets\\sass\\README.txt"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb.scss"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb\\free\\_animations.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb\\free\\_animations.scss"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb\\free\\_buttons.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb\\free\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb\\free\\_cards-basic.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb\\free\\_cards-basic.scss"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb\\free\\_carousels-basic.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb\\free\\_carousels-basic.scss"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb\\free\\_footer.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb\\free\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb\\free\\_forms-basic.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb\\free\\_forms-basic.scss"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb\\free\\_global.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb\\free\\_global.scss"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb\\free\\_helpers.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb\\free\\_helpers.scss"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb\\free\\_hover-effects.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb\\free\\_hover-effects.scss"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb\\free\\_navbars.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb\\free\\_navbars.scss"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb\\free\\_roboto.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb\\free\\_roboto.scss"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb\\free\\_typography.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb\\free\\_typography.scss"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb\\free\\_waves.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb\\free\\_waves.scss"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb\\free\\data\\_colors.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb\\free\\data\\_colors.scss"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb\\free\\data\\_mixins.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb\\free\\data\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb\\free\\data\\_prefixer.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb\\free\\data\\_prefixer.scss"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb\\free\\data\\_variables-b4.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb\\free\\data\\_variables-b4.scss"
+    },
+    {
+      "Id": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\wwwroot\\sass\\mdb\\free\\data\\_variables.scss",
+      "PackagePath": "staticwebassets\\sass\\mdb\\free\\data\\_variables.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.StoreApplication.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.StoreApplication.props",
+      "PackagePath": "build\\StoreApplication.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.StoreApplication.props",
+      "PackagePath": "buildMultiTargeting\\StoreApplication.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.StoreApplication.props",
+      "PackagePath": "buildTransitive\\StoreApplication.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
