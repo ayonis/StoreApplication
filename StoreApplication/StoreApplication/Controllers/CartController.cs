@@ -15,9 +15,9 @@ namespace StoreApplication.Controllers
             _CartService = cartService;
         }
         [HttpGet]
-        public IActionResult GetAllLessInfo(int customerId)
+        public IActionResult GetAllLessInfo(int Id)
         {
-            List<CartItem> cartItems = _CartService.GetAllItems(customerId);
+            List<CartItem> cartItems = _CartService.GetAllItems(Id);
 
             if (cartItems == null) return BadRequest();
 
@@ -27,9 +27,11 @@ namespace StoreApplication.Controllers
 
         }
         [HttpGet]
-        public IActionResult GetAll(int customerId)
+        public IActionResult GetAll(int Id)
         {
-            IQueryable<dynamic> cartItems = _CartService.GetAllItemsInfo(customerId);
+           
+
+            IQueryable<dynamic> cartItems = _CartService.GetAllItemsInfo(Id);
 
             if (cartItems == null) return BadRequest();
 
@@ -46,11 +48,11 @@ namespace StoreApplication.Controllers
             short status = _CartService.AddItem(customerId, itemId, quantity);
             if (status == -1)
             {
-                return BadRequest();
+                return BadRequest("No Items Added");
             }
             else
             {
-                return NoContent();
+                return Ok("Item Added Successfully");
             }
         }
         [HttpDelete]
@@ -63,7 +65,7 @@ namespace StoreApplication.Controllers
             }
             else
             {
-                return NoContent();
+                return Ok();
             }
         }
 
@@ -77,7 +79,7 @@ namespace StoreApplication.Controllers
             }
             else
             {
-                return NoContent();
+                return Ok();
             }
         }
     }

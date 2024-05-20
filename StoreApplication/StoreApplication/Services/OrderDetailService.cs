@@ -16,23 +16,28 @@ namespace Store.Services
 
         public short AddRecord(OrderDetail record)
         {
-
+            ItemService _ItemService = new ItemService(_configuration);
+            OrderService _OrderService = new OrderService(_configuration);
             if (record is null)
             {
                 return -1;
             }
             else
-            {
-                var order = context.Orders.AsNoTracking().SingleOrDefault(o => o.Id == record.OrderId);
-
-                var item = context.Items.AsNoTracking().SingleOrDefault(b => b.Id == record.ItemId);
+            { 
+                var order = _OrderService.GetOrderInfoById(record.OrderId);
+               
+                var item = _ItemService.GetRecordById(record.ItemId);
+                
                 if (order == null || item == null || (item.Quantity - record.Quantity) < 0 )
                 {
                     return -1;
+
                 }
-                else { 
+                else {
+                    
                     context.OrderDetails.Add(record);
                     item.Quantity = item.Quantity - record.Quantity;
+                    _ItemService.UpdateRecord(item);
                     context.SaveChanges();
                     return 1;
                 }

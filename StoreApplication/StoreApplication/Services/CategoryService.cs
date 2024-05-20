@@ -12,7 +12,7 @@ namespace Store.Services
         {
             context = new Store_DB(configuration);
         }
-        public short AddRecord(Category record)
+        public int AddRecord(Category record)
         {
             if (record is null)
             {

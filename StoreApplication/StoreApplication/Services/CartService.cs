@@ -66,6 +66,24 @@ namespace Store.Services
             }
         }
 
+        public short DeleteAllItems(int customerId)
+        {
+            var cart = context.Carts.SingleOrDefault(c => c.CustomerId == customerId);
+
+            var cartItem = context.CartItems.Where(cart_item => cart_item.CartId == cart.Id);
+
+            if (cartItem == null)
+            {
+                return -1;
+            }
+            else
+            {
+                context.CartItems.RemoveRange(cartItem);
+                context.SaveChanges();
+                return 1;
+            }
+        }
+
         public short UpdateItem(int customerId, int itemId, int quantity)
         {
             var cart = context.Carts.SingleOrDefault(c => c.CustomerId == customerId);
@@ -99,18 +117,10 @@ namespace Store.Services
 
         public IQueryable<dynamic> GetAllItemsInfo(int customerId)
         {
-            var cart = context.Carts.SingleOrDefault(c => c.CustomerId == customerId);
-
-            if (cart == null) return null;
-
-            else
-            {
-                var cartItems = from item in context.Items
-                                join cartItem in context.CartItems
-                                on item.Id equals cartItem.ItemId
-                                select new { item.Id , item.Name,item.Description,item.Image , item.Price,item.Author ,item.Type,item.CategoryId , cartItem.Quantity, cartItem.CartId};
+         
+                var cartItems = context.Carts.Where(c => c.CustomerId == customerId).Include(c => c.CartItems).ThenInclude(cartItem => cartItem.Item);
                 return cartItems;
-            }
+            
         }
         /*
         public short DeleteRecord(int customerId)

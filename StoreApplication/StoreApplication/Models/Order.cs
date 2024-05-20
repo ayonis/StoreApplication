@@ -11,7 +11,8 @@ namespace Store
     public class Order
     {
        public int Id { get; set; }
-       public float Cost { get; set; }
+       public double Cost { get; set; }
+       public double FinalCost { get; set; }
        public float Discount { get; set; }
        public DateTime DateOfOrder { get; set; }
        public float Tax {  get; set; }

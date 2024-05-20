@@ -8,7 +8,7 @@ namespace Store.Interfaces
 
         List<T> GetAll();
         T GetRecordById(int id);
-        short AddRecord(T record);
+        int AddRecord(T record);
         short UpdateRecord(T record);
         short DeleteRecord(int id);
     }

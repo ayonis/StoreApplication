@@ -16,7 +16,7 @@ namespace Store.Services
             _Configuration = configuration;
         }
 
-        public  short AddRecord(Customer record)
+        public  int AddRecord(Customer record)
         {
             if (record is null)
             {

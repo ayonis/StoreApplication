@@ -35,7 +35,7 @@ namespace Store.Controllers
             };
 
 
-            _employeeService.AddRecord(Item);
+          //  _employeeService.AddRecord(Item);
 
 
             return View("Home");

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Store;
 
@@ -11,9 +12,11 @@ using Store;
 namespace StoreApplication.Migrations
 {
     [DbContext(typeof(Store_DB))]
-    partial class Store_DBModelSnapshot : ModelSnapshot
+    [Migration("20240518124106_Add_FK_Between_Cart_And_Items")]
+    partial class Add_FK_Between_Cart_And_Items
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -247,8 +250,8 @@ namespace StoreApplication.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<double>("Cost")
-                        .HasColumnType("float");
+                    b.Property<float>("Cost")
+                        .HasColumnType("real");
 
                     b.Property<int>("CustomerId")
                         .HasColumnType("int");

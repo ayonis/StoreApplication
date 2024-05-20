@@ -3,44 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\models\\treasuryaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\models\\treasuryaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Migrations\\20240518044241_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StoreApplication\\Migrations\\20240518044241_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\services\\orderdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\services\\orderdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\configuration\\itementitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\configuration\\itementitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\models\\store_db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\models\\store_db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\migrations\\20240518044241_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\migrations\\20240518044241_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\interfaces\\ibasicservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\interfaces\\ibasicservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\migrations\\20240518124106_add_fk_between_cart_and_items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\migrations\\20240518124106_add_fk_between_cart_and_items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|c:\\users\\abdelrhman\\source\\repos\\storeapplication\\storeapplication\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DE8823-2CBB-4929-9A12-4A5573A8E4AF}|StoreApplication\\StoreApplication.csproj|solutionrelative:storeapplication\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,137 +86,255 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TestController.cs",
-              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Controllers\\TestController.cs",
-              "RelativeDocumentMoniker": "StoreApplication\\Controllers\\TestController.cs",
-              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Controllers\\TestController.cs",
-              "RelativeToolTip": "StoreApplication\\Controllers\\TestController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAowAsAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T04:48:29.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "StoreApplication\\Controllers\\CustomerController.cs",
-              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "StoreApplication\\Controllers\\CustomerController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAowAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T04:47:36.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20240518044241_init.cs",
-              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Migrations\\20240518044241_init.cs",
-              "RelativeDocumentMoniker": "StoreApplication\\Migrations\\20240518044241_init.cs",
-              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Migrations\\20240518044241_init.cs",
-              "RelativeToolTip": "StoreApplication\\Migrations\\20240518044241_init.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T04:42:41.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\appsettings.json",
-              "RelativeDocumentMoniker": "StoreApplication\\appsettings.json",
-              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\appsettings.json",
-              "RelativeToolTip": "StoreApplication\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-18T04:41:22.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ItemEntityTypeConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Configuration\\ItemEntityTypeConfiguration.cs",
-              "RelativeDocumentMoniker": "StoreApplication\\Configuration\\ItemEntityTypeConfiguration.cs",
-              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Configuration\\ItemEntityTypeConfiguration.cs",
-              "RelativeToolTip": "StoreApplication\\Configuration\\ItemEntityTypeConfiguration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T04:39:47.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "StoreApplication\\Models\\Category.cs",
-              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Models\\Category.cs",
-              "RelativeToolTip": "StoreApplication\\Models\\Category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T04:39:29.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Store_DB.cs",
-              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Models\\Store_DB.cs",
-              "RelativeDocumentMoniker": "StoreApplication\\Models\\Store_DB.cs",
-              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Models\\Store_DB.cs",
-              "RelativeToolTip": "StoreApplication\\Models\\Store_DB.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAwwDUAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T04:37:43.156Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "OrderDetail.cs",
               "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Models\\OrderDetail.cs",
               "RelativeDocumentMoniker": "StoreApplication\\Models\\OrderDetail.cs",
               "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Models\\OrderDetail.cs",
               "RelativeToolTip": "StoreApplication\\Models\\OrderDetail.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-18T04:37:42.44Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Models\\Item.cs",
-              "RelativeDocumentMoniker": "StoreApplication\\Models\\Item.cs",
-              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Models\\Item.cs",
-              "RelativeToolTip": "StoreApplication\\Models\\Item.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAowBAAAAAgAAAA",
+              "DocumentIndex": 7,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "StoreApplication\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "StoreApplication\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAAABYAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T04:37:14.011Z",
+              "WhenOpened": "2024-05-18T10:38:47.452Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "StoreApplication\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Services\\OrderService.cs",
+              "RelativeToolTip": "StoreApplication\\Services\\OrderService.cs",
+              "ViewState": "AQIAAHMAAAAAAAAAAAAMwH8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T10:42:54.086Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TreasuryAccount.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Models\\TreasuryAccount.cs",
+              "RelativeDocumentMoniker": "StoreApplication\\Models\\TreasuryAccount.cs",
+              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Models\\TreasuryAccount.cs",
+              "RelativeToolTip": "StoreApplication\\Models\\TreasuryAccount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T06:44:23.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderDetailService.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Services\\OrderDetailService.cs",
+              "RelativeDocumentMoniker": "StoreApplication\\Services\\OrderDetailService.cs",
+              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Services\\OrderDetailService.cs",
+              "RelativeToolTip": "StoreApplication\\Services\\OrderDetailService.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAAACUAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T00:25:40.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Services\\CartService.cs",
+              "RelativeDocumentMoniker": "StoreApplication\\Services\\CartService.cs",
+              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Services\\CartService.cs",
+              "RelativeToolTip": "StoreApplication\\Services\\CartService.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAuwEQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T11:40:41.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "StoreApplication\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Controllers\\CartController.cs",
+              "RelativeToolTip": "StoreApplication\\Controllers\\CartController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAIAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T11:29:22.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "StoreApplication\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Models\\Order.cs",
+              "RelativeToolTip": "StoreApplication\\Models\\Order.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T03:32:38.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ItemService.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Services\\ItemService.cs",
+              "RelativeDocumentMoniker": "StoreApplication\\Services\\ItemService.cs",
+              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Services\\ItemService.cs",
+              "RelativeToolTip": "StoreApplication\\Services\\ItemService.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAUwCYAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T01:04:20.062Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Models\\Item.cs",
+              "RelativeDocumentMoniker": "StoreApplication\\Models\\Item.cs",
+              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Models\\Item.cs",
+              "RelativeToolTip": "StoreApplication\\Models\\Item.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T03:32:30.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20240518044241_init.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Migrations\\20240518044241_init.cs",
+              "RelativeDocumentMoniker": "StoreApplication\\Migrations\\20240518044241_init.cs",
+              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Migrations\\20240518044241_init.cs",
+              "RelativeToolTip": "StoreApplication\\Migrations\\20240518044241_init.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T02:53:08.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "StoreApplication\\Services\\EmployeeService.cs",
+              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "StoreApplication\\Services\\EmployeeService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAkwA4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T01:04:12.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "StoreApplication\\Services\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Services\\CustomerService.cs",
+              "RelativeToolTip": "StoreApplication\\Services\\CustomerService.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAkwBIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T01:04:06.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "StoreApplication\\Services\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Services\\CategoryService.cs",
+              "RelativeToolTip": "StoreApplication\\Services\\CategoryService.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAkwA4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T01:03:56.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IBasicServices.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Interfaces\\IBasicServices.cs",
+              "RelativeDocumentMoniker": "StoreApplication\\Interfaces\\IBasicServices.cs",
+              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Interfaces\\IBasicServices.cs",
+              "RelativeToolTip": "StoreApplication\\Interfaces\\IBasicServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T01:02:20.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "StoreApplication\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "StoreApplication\\Controllers\\CustomerController.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA9wB0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T00:39:41.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20240518124106_Add_FK_Between_Cart_And_Items.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Migrations\\20240518124106_Add_FK_Between_Cart_And_Items.cs",
+              "RelativeDocumentMoniker": "StoreApplication\\Migrations\\20240518124106_Add_FK_Between_Cart_And_Items.cs",
+              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Migrations\\20240518124106_Add_FK_Between_Cart_And_Items.cs",
+              "RelativeToolTip": "StoreApplication\\Migrations\\20240518124106_Add_FK_Between_Cart_And_Items.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T12:41:09.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "CartItem.cs",
               "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Models\\CartItem.cs",
               "RelativeDocumentMoniker": "StoreApplication\\Models\\CartItem.cs",
               "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Models\\CartItem.cs",
               "RelativeToolTip": "StoreApplication\\Models\\CartItem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAZAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAA1wAgAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T04:35:47.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T11:46:54.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "StoreApplication\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\Abdelrhman\\Source\\Repos\\StoreApplication\\StoreApplication\\Models\\Cart.cs",
+              "RelativeToolTip": "StoreApplication\\Models\\Cart.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T11:46:44.189Z"
             }
           ]
         }

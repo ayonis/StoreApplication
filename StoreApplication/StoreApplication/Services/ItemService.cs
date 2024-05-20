@@ -22,7 +22,7 @@ namespace Store.Services
             var item = context.Items.AsNoTracking().SingleOrDefault( i => i.Id==id);
             return item;
         }
-        public short AddRecord(Item record)
+        public int AddRecord(Item record)
         {
             if(record is null) 
             {
@@ -76,5 +76,7 @@ namespace Store.Services
             UpdateRecord(Item);
 
         }
+
+
     }
 }
