@@ -77,6 +77,11 @@ namespace Store.Services
 
         }
 
-
+        public List<Item> FindRecordsByCondition(Func<Item, bool> predicate)
+        {
+            
+            return context.Items.Where(predicate).ToList();
+            
+        }
     }
 }

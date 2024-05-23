@@ -1,6 +1,7 @@
 ﻿using Store.Interfaces;
 using Store.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace Store.Services
 {
@@ -67,6 +68,10 @@ namespace Store.Services
                 context.SaveChanges();
                 return 1;
             }
+        }
+        public List<Category> FindRecordsByCondition(Func<Category, bool> predicate)
+        {
+            return context.Categories.Where(predicate).ToList();
         }
     }
 }

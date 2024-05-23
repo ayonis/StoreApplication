@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StoreApplication.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -17,9 +18,11 @@ namespace Store
        public DateTime DateOfOrder { get; set; }
        public float Tax {  get; set; }
        public int CustomerId { get; set; }
+      
        public List<Item> Items { get; set; }
        public Customer? Customer { get; set; }
        public List<OrderDetail> OrderDetails { get; set; }
+       public List<TreasuryTransaction> TreasuryTransactions { get; set;}
 
     }
 }

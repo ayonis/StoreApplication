@@ -1,4 +1,6 @@
-﻿namespace Store.Interfaces
+﻿using StoreApplication.Models;
+
+namespace Store.Interfaces
 {
     public interface IBasicServiceExtention<T> 
     {
@@ -7,5 +9,6 @@
         short AddRecord(T record);
         short UpdateRecord(T record);
         short DeleteRecord(int Id_Pk1, int Id_Pk2);
+        public List<T> FindRecordsByCondition(Func<T, bool> predicate);
     }
 }

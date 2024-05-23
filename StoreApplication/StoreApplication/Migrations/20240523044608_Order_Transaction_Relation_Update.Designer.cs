@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Store;
 
@@ -11,9 +12,11 @@ using Store;
 namespace StoreApplication.Migrations
 {
     [DbContext(typeof(Store_DB))]
-    partial class Store_DBModelSnapshot : ModelSnapshot
+    [Migration("20240523044608_Order_Transaction_Relation_Update")]
+    partial class Order_Transaction_Relation_Update
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -332,7 +335,7 @@ namespace StoreApplication.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<int?>("OrderId")
+                    b.Property<int>("OrderId")
                         .HasColumnType("int");
 
                     b.Property<int>("TreasuryAccountId")
@@ -343,7 +346,8 @@ namespace StoreApplication.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OrderId");
+                    b.HasIndex("OrderId")
+                        .IsUnique();
 
                     b.HasIndex("TreasuryAccountId");
 
@@ -424,9 +428,10 @@ namespace StoreApplication.Migrations
             modelBuilder.Entity("StoreApplication.Models.TreasuryTransaction", b =>
                 {
                     b.HasOne("Store.Order", "Order")
-                        .WithMany("TreasuryTransactions")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.SetNull);
+                        .WithOne("TreasuryTransaction")
+                        .HasForeignKey("StoreApplication.Models.TreasuryTransaction", "OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("StoreApplication.Models.TreasuryAccount", "TreasuryAccount")
                         .WithMany("Transactions")
@@ -466,7 +471,8 @@ namespace StoreApplication.Migrations
                 {
                     b.Navigation("OrderDetails");
 
-                    b.Navigation("TreasuryTransactions");
+                    b.Navigation("TreasuryTransaction")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("StoreApplication.Models.TreasuryAccount", b =>

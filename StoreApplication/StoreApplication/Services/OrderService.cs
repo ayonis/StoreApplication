@@ -1,5 +1,9 @@
 ﻿using Store.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using StoreApplication.Models;
+using StoreApplication.Services;
+using Microsoft.VisualBasic;
 
 namespace Store.Services
 {
@@ -7,11 +11,17 @@ namespace Store.Services
     {
         protected Store_DB context;
         protected IConfiguration _Configuration;
-
+        private TreasuryTransactionService treasuryTransactionService;
+        private TreasuryAccountService treasuryAccountService;
+        TreasuryAccount treasuryAccount;
+        
         public OrderService(IConfiguration configuration)
         {
             context = new Store_DB(configuration);
             _Configuration = configuration;
+            treasuryTransactionService = new TreasuryTransactionService(_Configuration);
+            treasuryAccountService = new TreasuryAccountService(_Configuration);
+            treasuryAccount = treasuryAccountService.GetAll().FirstOrDefault();
         }
         public int AddRecord(Order record)
         {
@@ -27,15 +37,30 @@ namespace Store.Services
                 {
                     return -1;
                 }
-                else { 
+                else {
+                    
+                    //Cretae the Transaction First Then Create the Order
                     context.Orders.Add(record);
                     context.SaveChanges();
+                    //After Creating the Order you can add its items
+                    short status = AddOrderItems(record);
+                    
+                    if(status == 1) { 
+                   int treasuryTransactionId = CreateOrderTransaction(treasuryAccount.Id, record, 1);
+
+                    treasuryAccountService.UpdateTreasuryAccountBalance(treasuryAccount.Id, treasuryTransactionId);
+                    
                     return record.Id;
+                    }
+                    else
+                    {
+                        return -1;
+                    }
                 }
             }
         }
-        
 
+        #region
         public short DeleteRecord(int id)
         {
             var existingRecord = GetRecordById(id);
@@ -46,8 +71,12 @@ namespace Store.Services
             }
             else
             {
+               
                 context.Orders.Remove(existingRecord);
                 context.SaveChanges();
+                int transId = CreateOrderTransaction(treasuryAccount.Id, existingRecord, 0);
+                treasuryAccountService.UpdateTreasuryAccountBalance(treasuryAccount.Id, transId);
+
                 return 1;
             }
         }
@@ -79,29 +108,38 @@ namespace Store.Services
             
             else
             {
-                context.Orders.Add(record);
+                context.Orders.Update(record);
                 context.SaveChanges();
                 return 1;
             }
         }
 
-        public (int, string) AddOrderItems(int customerId, int orderId)
+        public List<Order> FindRecordsByCondition(Func<Order, bool> predicate)
         {
+            return context.Orders.Where(predicate).ToList();
+        }
+
+        public short AddOrderItems(Order order)
+        {
+            
             CartService cartService = new CartService(_Configuration);
             OrderDetailService orderDetailService = new OrderDetailService(_Configuration);
+
             OrderDetail orderDetail = new OrderDetail();
 
             int status = 1;
-            var order = context.Orders.Find(orderId);
 
-            var itemsInCart = cartService.GetAllItems(customerId);
+            var itemsInCart = cartService.GetAllItems(order.CustomerId);
 
             using var transaction = context.Database.BeginTransaction();
+            
             try
             {
+                if (itemsInCart == null) throw new Exception();
+
                 foreach (var item in itemsInCart)
                 {
-                    orderDetail.OrderId = orderId;
+                    orderDetail.OrderId = order.Id;
                     orderDetail.ItemId = item.ItemId;
                     orderDetail.Quantity = item.Quantity;
 
@@ -110,22 +148,68 @@ namespace Store.Services
 
                 }
 
+                order.Cost = calculateOrderCost(order);
+                
+                context.SaveChanges();
+
                 transaction.Commit();
+
             }
             catch (Exception ex)
             {
                 transaction.Rollback();
                 DeleteRecord(order.Id);
-                return (-1, "Faild to Save All Items : Item May Not Exist or the Quantity may be not Enough");
+                return -1;
 
             }
 
-            order.Cost = calculateOrderCost(order);
-            context.SaveChanges();
-            return (1, "Saved All Items");
+
+            return 1;
 
         }
+        #endregion
+        protected int CreateOrderTransaction(int treasuryAccountId , Order order, byte TransactionType)
+        {
+            TreasuryTransaction treasuryTransaction = new TreasuryTransaction();
 
+            if(TransactionType == 1) { 
+                treasuryTransaction.Date = DateTime.Now;
+                treasuryTransaction.Type = TransactionType;
+                treasuryTransaction.Amount = order.Cost;
+                treasuryTransaction.Description = "Adding the Transaction Of Order Number = " + order.Id;
+                treasuryTransaction.OrderId = order.Id;
+                treasuryTransaction.TreasuryAccountId = treasuryAccountId;
+
+                int status = treasuryTransactionService.AddRecord(treasuryTransaction);
+
+                if (status == -1) return -1;
+                else
+                {
+
+                    return treasuryTransaction.Id;
+                }
+            }
+            else
+            {
+                treasuryTransaction.Date = DateTime.Now;
+                treasuryTransaction.Type = TransactionType;
+                treasuryTransaction.Amount = -(order.Cost);
+                treasuryTransaction.Description = "Deleting the Order Number = " + order.Id;
+                treasuryTransaction.OrderId = null;
+                treasuryTransaction.TreasuryAccountId = treasuryAccountId;
+
+                int status = treasuryTransactionService.AddRecord(treasuryTransaction);
+
+                if (status == -1) return -1;
+                else
+                {
+
+                    return treasuryTransaction.Id;
+                }
+            }
+
+
+        }
         protected double calculateOrderCost(Order order)
         {
             double cost = 0.0;
@@ -148,5 +232,8 @@ namespace Store.Services
 
             return cost;
         }
+
+
+        
     }
 }

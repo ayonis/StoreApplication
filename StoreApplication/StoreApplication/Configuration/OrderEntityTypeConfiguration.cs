@@ -12,6 +12,8 @@ namespace Store.Configuration
             builder.Property(o => o.DateOfOrder).HasDefaultValueSql("GETDATE()");
             builder.Ignore(o => o.Items);
             builder.Property(o => o.CustomerId);
+            
+            builder.Property(o => o.Cost).HasDefaultValue(0);
         }
     }
 }

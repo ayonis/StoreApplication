@@ -2,6 +2,7 @@
 using Store.Models;
 using Microsoft.EntityFrameworkCore;
 using StoreApplication.Interfaces;
+using System.Linq;
 
 namespace Store.Services
 {
@@ -122,49 +123,12 @@ namespace Store.Services
                 return cartItems;
             
         }
-        /*
-        public short DeleteRecord(int customerId)
-        {
-            var existingRecord = GetRecordById(customerId);
 
-            if (existingRecord == null)
-            {
-                return -1;
-            }
-            else
-            {
-                context.Carts.Remove(existingRecord);
-                context.SaveChanges();
-                return 1;
-            }
+        public List<CartItem> FindItemByCondition(Func<CartItem, bool> predicate)
+        {
+            return context.CartItems.Where(predicate).ToList();
         }
 
-        public List<Cart> GetAll()
-        {
-            var Carts = context.Carts.ToList();
-            return Carts;
-        }
-
-        public Cart GetRecordById(int customerId)
-        {
-            var Cart = context.Carts.AsNoTracking().SingleOrDefault(c => c.CustomerId == customerId);
-            return Cart;
-        }
-
-        public short UpdateRecord(Cart record)
-        {
-            var existingRecord = GetRecordById(record.CustomerId);
-
-            if (record is null || existingRecord is null) return -1;
-
-
-            else
-            {
-                context.Carts.Update(record);
-                context.SaveChanges();
-                return 1;
-            }
-        }*/
 
     }
 }

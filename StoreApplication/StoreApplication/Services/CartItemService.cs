@@ -3,6 +3,7 @@ using Store.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System.Security.Cryptography;
+using System.Linq;
 
 namespace Store.Services
 {
@@ -56,6 +57,11 @@ namespace Store.Services
                 context.SaveChanges();
                 return 1;
             }
+        }
+
+        public List<CartItem> FindRecordsByCondition(Func<CartItem, bool> predicate)
+        {
+            return context.CartItems.Where(predicate).ToList();
         }
 
         public List<CartItem> GetAll(int cartId)

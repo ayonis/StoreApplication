@@ -1,5 +1,6 @@
 ﻿using Store.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace Store.Services
 {
@@ -60,6 +61,7 @@ namespace Store.Services
             }
         }
 
+       
         public List<OrderDetail> GetAll(int orderId)
         {
             var OrderDetail = context.OrderDetails.AsNoTracking().Where(ods => ods.OrderId == orderId).ToList();
@@ -88,16 +90,11 @@ namespace Store.Services
         }
 
 
-
-        private void updateQuantityOfItem(OrderDetail existingRecord)
+        public List<OrderDetail> FindRecordsByCondition(Func<OrderDetail, bool> predicate)
         {
-            int quantityOfDeletedItemFromOrder = existingRecord.Quantity;
-            int BookId = existingRecord.ItemId;
-            ItemService bookService = new ItemService(_configuration);
-
-            bookService.UpdateItemQuantity(BookId, quantityOfDeletedItemFromOrder);
+            return context.OrderDetails.Where(predicate).ToList();
         }
 
-        
+
     }
 }

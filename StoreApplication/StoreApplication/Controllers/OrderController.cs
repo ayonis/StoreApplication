@@ -31,7 +31,7 @@ namespace StoreApplication.Controllers
             return Json(_OrderService.GetRecordById(Id));
 
         }
-
+        [HttpPost]
         public IActionResult Create(int customerId)
         {
             OrderService orderservice = new OrderService(_Configuration);
@@ -42,16 +42,24 @@ namespace StoreApplication.Controllers
             int orderId = orderservice.AddRecord(order);
 
             if(orderId == -1 ) return BadRequest(" Order Creation Fail");
-           
-             (int status,string msg) = orderservice.AddOrderItems(customerId, orderId);
-
-            if (status == -1) return BadRequest(status + " " + msg);
 
             else
             {
                 cartService.DeleteAllItems(customerId);
                 return Ok("Ok: The Order Is Done Successfully");
             }
+        }
+        [HttpDelete]
+        public IActionResult Delete(int orderId)
+        {
+            OrderService orderservice = new OrderService(_Configuration);
+
+            int status = orderservice.DeleteRecord(orderId);
+
+            if (orderId == -1) return BadRequest(" Order Creation Fail");
+            else
+                return Ok("Order Deleted");
+            
         }
     }
 }

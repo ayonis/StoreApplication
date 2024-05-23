@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Store;
 
@@ -11,9 +12,11 @@ using Store;
 namespace StoreApplication.Migrations
 {
     [DbContext(typeof(Store_DB))]
-    partial class Store_DBModelSnapshot : ModelSnapshot
+    [Migration("20240523020853_Make_Default_For_Order_Cost")]
+    partial class Make_Default_For_Order_Cost
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -269,9 +272,15 @@ namespace StoreApplication.Migrations
                     b.Property<float>("Tax")
                         .HasColumnType("real");
 
+                    b.Property<int>("TreasuryTransactionId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CustomerId");
+
+                    b.HasIndex("TreasuryTransactionId")
+                        .IsUnique();
 
                     b.ToTable("Orders");
                 });
@@ -332,18 +341,16 @@ namespace StoreApplication.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<int?>("OrderId")
+                    b.Property<int>("OrderNum")
                         .HasColumnType("int");
 
-                    b.Property<int>("TreasuryAccountId")
+                    b.Property<int?>("TreasuryAccountId")
                         .HasColumnType("int");
 
                     b.Property<byte>("Type")
                         .HasColumnType("tinyint");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("OrderId");
 
                     b.HasIndex("TreasuryAccountId");
 
@@ -399,7 +406,15 @@ namespace StoreApplication.Migrations
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
+                    b.HasOne("StoreApplication.Models.TreasuryTransaction", "TreasuryTransaction")
+                        .WithOne("Order")
+                        .HasForeignKey("Store.Order", "TreasuryTransactionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Customer");
+
+                    b.Navigation("TreasuryTransaction");
                 });
 
             modelBuilder.Entity("Store.OrderDetail", b =>
@@ -423,20 +438,9 @@ namespace StoreApplication.Migrations
 
             modelBuilder.Entity("StoreApplication.Models.TreasuryTransaction", b =>
                 {
-                    b.HasOne("Store.Order", "Order")
-                        .WithMany("TreasuryTransactions")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.SetNull);
-
-                    b.HasOne("StoreApplication.Models.TreasuryAccount", "TreasuryAccount")
+                    b.HasOne("StoreApplication.Models.TreasuryAccount", null)
                         .WithMany("Transactions")
-                        .HasForeignKey("TreasuryAccountId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Order");
-
-                    b.Navigation("TreasuryAccount");
+                        .HasForeignKey("TreasuryAccountId");
                 });
 
             modelBuilder.Entity("Store.Customer", b =>
@@ -465,13 +469,17 @@ namespace StoreApplication.Migrations
             modelBuilder.Entity("Store.Order", b =>
                 {
                     b.Navigation("OrderDetails");
-
-                    b.Navigation("TreasuryTransactions");
                 });
 
             modelBuilder.Entity("StoreApplication.Models.TreasuryAccount", b =>
                 {
                     b.Navigation("Transactions");
+                });
+
+            modelBuilder.Entity("StoreApplication.Models.TreasuryTransaction", b =>
+                {
+                    b.Navigation("Order")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

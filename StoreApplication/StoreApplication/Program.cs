@@ -4,6 +4,8 @@ using Store.Interfaces;
 using Store;
 using Store.Models;
 using StoreApplication.Interfaces;
+using StoreApplication.Models;
+using StoreApplication.Services;
 
 namespace BookStore
 {
@@ -25,7 +27,8 @@ namespace BookStore
             builder.Services.AddTransient(typeof(IBasicServices<Customer>), typeof(CustomerService));
             builder.Services.AddTransient(typeof(IBasicServices<Item>), typeof(ItemService));
             builder.Services.AddTransient(typeof(IBasicServices<Order>), typeof(OrderService));
-            
+            builder.Services.AddTransient(typeof(IBasicServices<TreasuryAccount>), typeof(TreasuryAccountService));
+
 
             var app = builder.Build();
 

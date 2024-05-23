@@ -42,6 +42,11 @@ namespace Store.Services
             }
         }
 
+        public List<Employee> FindRecordsByCondition(Func<Employee, bool> predicate)
+        {
+            return context.Employees.Where(predicate).ToList();
+        }
+
         public List<Employee> GetAll()
         {
             var employee = context.Employees.ToList();

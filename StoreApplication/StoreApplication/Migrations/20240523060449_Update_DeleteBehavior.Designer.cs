@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Store;
 
@@ -11,9 +12,11 @@ using Store;
 namespace StoreApplication.Migrations
 {
     [DbContext(typeof(Store_DB))]
-    partial class Store_DBModelSnapshot : ModelSnapshot
+    [Migration("20240523060449_Update_DeleteBehavior")]
+    partial class Update_DeleteBehavior
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

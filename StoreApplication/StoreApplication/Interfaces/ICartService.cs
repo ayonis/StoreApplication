@@ -9,5 +9,6 @@ namespace StoreApplication.Interfaces
         public short DeleteItem(int customerId, int itemId);
         public short UpdateItem(int customerId, int itemId, int quantity);
         public IQueryable<dynamic> GetAllItemsInfo(int customerId);
+        public List<T> FindItemByCondition(Func<T, bool> predicate);
     }
 }

@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Store.Models;
 using Microsoft.Extensions.Configuration;
 using StoreApplication.Interfaces;
+using System.Linq;
+
 namespace Store.Services
 {
     public class CustomerService : IBasicServices<Customer>
@@ -75,6 +77,10 @@ namespace Store.Services
                 context.SaveChanges();
                 return 1;
             }
+        }
+        public List<Customer> FindRecordsByCondition(Func<Customer, bool> predicate)
+        {
+            return context.Customers.Where(predicate).ToList();
         }
     }
 }

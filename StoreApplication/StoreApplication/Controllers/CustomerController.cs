@@ -48,7 +48,7 @@ namespace StoreApplication.Controllers
                 return NotFound();
             }
 
-            else return NoContent();
+            else return Ok();
 
         }
 
@@ -60,7 +60,7 @@ namespace StoreApplication.Controllers
             {
                 return NotFound();
             }
-            else return NoContent();
+            else return Ok();
         }
 
     }

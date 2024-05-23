@@ -43,7 +43,7 @@ namespace StoreApplication.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(int customerId , int itemId , int quantity)
+        public IActionResult AddItem(int customerId , int itemId , int quantity)
         {
             short status = _CartService.AddItem(customerId, itemId, quantity);
             if (status == -1)
