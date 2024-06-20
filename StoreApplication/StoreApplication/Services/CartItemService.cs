@@ -12,7 +12,7 @@ namespace Store.Services
         protected Store_DB context;
         IConfiguration _configuration;
 
-        public CartItemService(IConfiguration configuration)
+        public CartItemService(IConfiguration configuration )
         {
             context = new Store_DB(configuration);
             _configuration = configuration;

@@ -10,9 +10,9 @@ namespace Store.Services
     {
         protected Store_DB context;
 
-        public CartService(IConfiguration configuration)
+        public CartService( Store_DB contxt)
         {
-            context = new Store_DB(configuration);
+            context = contxt;
         }
 
         public List<CartItem> GetAllItems(int customerId)

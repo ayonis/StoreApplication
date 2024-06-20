@@ -6,6 +6,9 @@ using Store.Models;
 using StoreApplication.Interfaces;
 using StoreApplication.Models;
 using StoreApplication.Services;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.EntityFrameworkCore;
+using StoreApplication.ViewModel;
 
 namespace BookStore
 {
@@ -20,17 +23,21 @@ namespace BookStore
             });
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            builder.Services.AddTransient(typeof(IBasicServices<Employee>), typeof(EmployeeService));
-            builder.Services.AddTransient(typeof(ICartService<CartItem>), typeof(CartService));
-            builder.Services.AddTransient(typeof(IBasicServices<Category>), typeof(CategoryService));
-       
-            builder.Services.AddTransient(typeof(IBasicServices<Customer>), typeof(CustomerService));
-            builder.Services.AddTransient(typeof(IBasicServices<Item>), typeof(ItemService));
-            builder.Services.AddTransient(typeof(IBasicServices<Order>), typeof(OrderService));
-            builder.Services.AddTransient(typeof(IBasicServices<TreasuryAccount>), typeof(TreasuryAccountService));
+            builder.Services.AddScoped(typeof(IUserService<EmployeeViewModel, Employee>), typeof(EmployeeService));
+            builder.Services.AddScoped(typeof(ICartService<CartItem>), typeof(CartService));
+            builder.Services.AddScoped(typeof(IBasicServices<Category>), typeof(CategoryService));
 
+			builder.Services.AddScoped(typeof(IUserService<CustomerViewModel, Customer>), typeof(CustomerService));
+			builder.Services.AddScoped(typeof(IBasicServices<Item>), typeof(ItemService));
+			builder.Services.AddScoped(typeof(IBasicServiceOrderExtention<Order>), typeof(OrderService));
+			builder.Services.AddScoped(typeof(IBasicServiceTreasuryAccountExtention<TreasuryAccount>), typeof(TreasuryAccountService));
+			builder.Services.AddScoped(typeof(IBasicServices<TreasuryTransaction>), typeof(TreasuryTransactionService));
+			builder.Services.AddScoped(typeof(IBasicServiceExtention<OrderDetail>), typeof(OrderDetailService));
+			builder.Services.AddScoped(typeof(IBasicServices<ApplicationUser>), typeof(ApplicationUserService));
 
-            var app = builder.Build();
+			builder.Services.AddDbContext<Store_DB>(options =>
+	options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+			var app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())

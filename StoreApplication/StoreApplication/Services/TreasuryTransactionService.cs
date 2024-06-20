@@ -10,9 +10,9 @@ namespace StoreApplication.Services
     {
         protected Store_DB context;
 
-        public TreasuryTransactionService(IConfiguration configuration)
+        public TreasuryTransactionService(Store_DB contxt)
         {
-            context = new Store_DB(configuration);
+            context = contxt;
         }
         public int AddRecord(TreasuryTransaction record)
         {

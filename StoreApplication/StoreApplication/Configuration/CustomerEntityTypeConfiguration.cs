@@ -15,10 +15,10 @@ namespace Store.Configuration
             builder.HasKey(c => c.Id);
             builder.Property(b => b.Id).ValueGeneratedOnAdd();
             builder.Property(c => c.Name).IsRequired();
-            builder.Property(c => c.Phone).IsRequired();
+            
             builder.Property(c => c.Name).HasColumnType("nvarchar(100)");
             builder.Property(c => c.Address).HasColumnType("nvarchar(200)");
-            builder.Property(c => c.Phone).HasColumnType("nvarchar(30)");
+            
             builder.HasMany(c => c.Orders).WithOne(o => o.Customer).HasForeignKey(o => o.CustomerId).OnDelete(DeleteBehavior.NoAction); ;
         }
     }

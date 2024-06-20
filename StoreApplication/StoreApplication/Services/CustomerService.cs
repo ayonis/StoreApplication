@@ -4,32 +4,64 @@ using Store.Models;
 using Microsoft.Extensions.Configuration;
 using StoreApplication.Interfaces;
 using System.Linq;
+using StoreApplication.ViewModel;
+using StoreApplication.Models;
 
 namespace Store.Services
 {
-    public class CustomerService : IBasicServices<Customer>
-    {
+    public class CustomerService : IUserService<CustomerViewModel, Customer>
+	{
         protected Store_DB context;
-        protected IConfiguration _Configuration;
-        
-        public CustomerService(IConfiguration configuration) 
+		ICartService<CartItem> _CartService;
+		IBasicServices<ApplicationUser> _ApplicationUser;
+		public CustomerService(Store_DB contxt, ICartService<CartItem> CartService, IBasicServices<ApplicationUser> applicationUser) 
         { 
-            context = new Store_DB(configuration);
-            _Configuration = configuration;
-        }
+            context = contxt;
+            _CartService = CartService;
+			_ApplicationUser = applicationUser;
+		}
 
-        public  int AddRecord(Customer record)
+        public  int AddRecord(CustomerViewModel record)
         {
-            if (record is null)
-            {
-                return -1;
-            }
-            else
-            {
-                context.Customers.Add(record);
+			var user = _ApplicationUser.FindRecordsByCondition(u => u.UserName == record.UserName && u.Email != record.Email);
+			if (record is null || user.Count() != 0)
+			{
+				return -1;
+			}
+			else
+			{
+				ApplicationUser customerUser = new ApplicationUser
+				{
+					UserName = record.UserName,
+					NormalizedUserName = record.NormalizedUserName,
+					Email = record.Email,
+					NormalizedEmail = record.NormalizedEmail,
+					EmailConfirmed = record.EmailConfirmed,
+					PasswordHash = record.PasswordHash,
+					SecurityStamp = record.SecurityStamp,
+					ConcurrencyStamp = record.ConcurrencyStamp,
+					PhoneNumber = record.PhoneNumber,
+					PhoneNumberConfirmed = record.PhoneNumberConfirmed,
+					TwoFactorEnabled = record.TwoFactorEnabled,
+					LockoutEnd = record.LockoutEnd,
+					LockoutEnabled = record.LockoutEnabled,
+					AccessFailedCount = record.AccessFailedCount
+
+				};
+				int userId = _ApplicationUser.AddRecord(customerUser);
+
+				Customer customer = new Customer
+				{
+					Name = record.Name,
+					City = record.City,
+		            Country = record.Country,
+					Address = record.Address,
+					UserFK = userId
+
+				};
+				context.Customers.Add(customer);
                 context.SaveChanges();
-                CartService _CartService = new CartService(_Configuration);
-                _CartService.CreateCartForCustomer(record.Id);
+                _CartService.CreateCartForCustomer(customer.Id);
 
                 return 1;
             }
@@ -46,7 +78,10 @@ namespace Store.Services
             }
             else
             {
-                context.Customers.Remove(existingRecord);
+				int userFk = existingRecord.UserFK;
+
+				_ApplicationUser.DeleteRecord(userFk);
+				context.Customers.Remove(existingRecord);
                 context.SaveChangesAsync();
                 return 1;
             }
@@ -54,33 +89,68 @@ namespace Store.Services
 
         public List<Customer> GetAll()
         {
-            var Customers = context.Customers.ToList();
+            var Customers = context.Customers.Include(u => u.ApplicationUser).ToList();
             return Customers;
         }
 
         public Customer GetRecordById(int id)
         {
-            var Customer = context.Customers.AsNoTracking().SingleOrDefault(c => c.Id == id);
+            var Customer = context.Customers.Include(u => u.ApplicationUser).AsNoTracking().FirstOrDefault(c => c.Id == id);
             return Customer;
         }
 
-        public short UpdateRecord( Customer record)
+        public short UpdateRecord(CustomerViewModel record)
         {
-            var existingRecord = GetRecordById(record.Id);
+			var existingRecord = GetRecordById(record.Id);
 
-            if (record is null || existingRecord is null) return -1;
+			int userFk = existingRecord.UserFK;
+
+			var existinUser = _ApplicationUser.GetRecordById(userFk);
+
+			if (record is null || existingRecord is null || existinUser is null || userFk != record.UserFK) 
+				return -1;
 
 
-            else
-            {
-                context.Customers.Update(record);
+			else
+			{
+				ApplicationUser user = new ApplicationUser
+				{
+					Id = userFk,
+					UserName = record.UserName,
+					NormalizedUserName = record.NormalizedUserName,
+					Email = record.Email,
+					NormalizedEmail = record.NormalizedEmail,
+					EmailConfirmed = record.EmailConfirmed,
+					PasswordHash = record.PasswordHash,
+					SecurityStamp = record.SecurityStamp,
+					ConcurrencyStamp = record.ConcurrencyStamp,
+					PhoneNumber = record.PhoneNumber,
+					PhoneNumberConfirmed = record.PhoneNumberConfirmed,
+					TwoFactorEnabled = record.TwoFactorEnabled,
+					LockoutEnd = record.LockoutEnd,
+					LockoutEnabled = record.LockoutEnabled,
+					AccessFailedCount = record.AccessFailedCount
+				};
+
+				Customer customer = new Customer
+				{
+					Id = record.Id,
+					Name = record.Name,
+					City = record.City,
+					Country = record.Country,
+					Address = record.Address,
+					UserFK = userFk
+
+				};
+				_ApplicationUser.UpdateRecord(user);
+				context.Customers.Update(customer);
                 context.SaveChanges();
                 return 1;
             }
         }
-        public List<Customer> FindRecordsByCondition(Func<Customer, bool> predicate)
-        {
-            return context.Customers.Where(predicate).ToList();
-        }
-    }
+		public List<Customer> FindRecordsByCondition(Func<Customer, bool> predicate)
+		{
+			return context.Customers.Where(predicate).ToList();
+		}
+	}
 }

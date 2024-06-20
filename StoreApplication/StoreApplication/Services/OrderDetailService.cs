@@ -1,35 +1,38 @@
 ﻿using Store.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using StoreApplication.Interfaces;
 
 namespace Store.Services
 {
     public class OrderDetailService : IBasicServiceExtention<OrderDetail>
     {
         protected Store_DB context;
-        IConfiguration _configuration;
+      
+        IBasicServices<Item> _ItemService;
+		
 
-        public OrderDetailService(IConfiguration configuration)
+		public OrderDetailService(Store_DB contxt , IBasicServices<Item> ItemService )
         {
-            context = new Store_DB(configuration);
-            _configuration = configuration;
-        }
+            context =  contxt;
+            _ItemService = ItemService;
+       
+		}
 
         public short AddRecord(OrderDetail record)
         {
-            ItemService _ItemService = new ItemService(_configuration);
-            OrderService _OrderService = new OrderService(_configuration);
+          
             if (record is null)
             {
                 return -1;
             }
             else
             { 
-                var order = _OrderService.GetOrderInfoById(record.OrderId);
+               
                
                 var item = _ItemService.GetRecordById(record.ItemId);
                 
-                if (order == null || item == null || (item.Quantity - record.Quantity) < 0 )
+                if ( item == null || (item.Quantity - record.Quantity) < 0 )
                 {
                     return -1;
 

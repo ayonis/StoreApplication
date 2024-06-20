@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using StoreApplication.Models;
 
 namespace Store
 {
@@ -15,9 +16,9 @@ namespace Store
         public string Name { get; set; }
         public string SSN { get; set; }
         public string? Address { get; set; }
-        public string Username {  get; set; }
-        public string Password {  get; set; }
-        public short Privilige { get; set; } 
-        public string Phone { get; set; }
+
+		
+		public int? UserFK { get; set; }
+		public ApplicationUser? ApplicationUser { get; set; }
     }
 }

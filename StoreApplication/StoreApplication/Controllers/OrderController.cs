@@ -6,18 +6,23 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 using System.Transactions;
 using Microsoft.VisualBasic;
+using StoreApplication.Interfaces;
+using Store.Models;
 
 namespace StoreApplication.Controllers
 {
     public class OrderController : Controller
     {
-        IBasicServices<Order> _OrderService;
-        IConfiguration _Configuration;
-        public OrderController(IBasicServices<Order> orderervice, IConfiguration configuration)
+		IBasicServiceOrderExtention<Order> _OrderService;
+        ICartService<CartItem> _CartService;
+	
+
+        public OrderController( IBasicServiceOrderExtention<Order> OrderService , ICartService<CartItem> CartService)
         {
-            _OrderService = orderervice;
-            _Configuration = configuration;
-        }
+            _OrderService = OrderService;
+            _CartService = CartService;
+
+		}
 
         [HttpGet]
         public IActionResult GetAll()
@@ -34,27 +39,26 @@ namespace StoreApplication.Controllers
         [HttpPost]
         public IActionResult Create(int customerId)
         {
-            OrderService orderservice = new OrderService(_Configuration);
-            CartService cartService = new CartService(_Configuration);
+            
             Order order = new Order();
             order.CustomerId = customerId;
 
-            int orderId = orderservice.AddRecord(order);
+            int orderId = _OrderService.AddRecord(order);
 
             if(orderId == -1 ) return BadRequest(" Order Creation Fail");
 
             else
             {
-                cartService.DeleteAllItems(customerId);
+				_CartService.DeleteAllItems(customerId);
                 return Ok("Ok: The Order Is Done Successfully");
             }
         }
         [HttpDelete]
         public IActionResult Delete(int orderId)
         {
-            OrderService orderservice = new OrderService(_Configuration);
+          
 
-            int status = orderservice.DeleteRecord(orderId);
+            int status = _OrderService.DeleteRecord(orderId);
 
             if (orderId == -1) return BadRequest(" Order Creation Fail");
             else

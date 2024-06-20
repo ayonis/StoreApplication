@@ -2,13 +2,15 @@
 using Store.Interfaces;
 using Store;
 using Store.Services;
+using StoreApplication.ViewModel;
+using StoreApplication.Interfaces;
 
 namespace StoreApplication.Controllers
 {
     public class CustomerController : Controller
     {
-        IBasicServices<Customer> _CustomerService;
-        public CustomerController(IBasicServices<Customer> customerService)
+		IUserService<CustomerViewModel, Customer> _CustomerService;
+        public CustomerController(IUserService<CustomerViewModel, Customer> customerService)
         {
             _CustomerService = customerService;
         }
@@ -27,7 +29,7 @@ namespace StoreApplication.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Customer customer)
+        public IActionResult Create(CustomerViewModel customer)
         {
             if (customer == null)
             {
@@ -40,7 +42,7 @@ namespace StoreApplication.Controllers
         }
 
         [HttpPut]
-        public IActionResult Update(Customer customer)
+        public IActionResult Update(CustomerViewModel customer)
         {
             var status = _CustomerService.UpdateRecord(customer);
             if (status == -1)

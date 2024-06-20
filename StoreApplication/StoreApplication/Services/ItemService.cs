@@ -7,9 +7,9 @@ namespace Store.Services
     public class ItemService : IBasicServices<Item>
     {
         protected Store_DB context;
-        public ItemService(IConfiguration configuration) 
+        public ItemService( Store_DB contxt) 
         { 
-            context = new Store_DB(configuration);
+            context = contxt;
         }
         public List<Item> GetAll()
         {
@@ -45,7 +45,7 @@ namespace Store.Services
                 else
                 {
                     context.Items.Update(record);
-                    context.SaveChangesAsync();
+                    context.SaveChanges();
                     return 1;
                 }
             

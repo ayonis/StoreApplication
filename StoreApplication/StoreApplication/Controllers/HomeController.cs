@@ -15,7 +15,7 @@ namespace Store.Controllers
 
         public IActionResult Index()
         {
-            return View("Home");
+            return View("Index");
         }
 
         public IActionResult Privacy()

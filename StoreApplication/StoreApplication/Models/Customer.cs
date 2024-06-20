@@ -1,4 +1,5 @@
 ﻿using Store.Models;
+using StoreApplication.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -15,15 +16,13 @@ namespace Store
         public int Id {get; set;}
        
         public string Name { get; set; }
-        public string Email { get; set; }   
         public string City { get; set; }
         public string Country { get; set; }
-        public string Username {  get; set; }
-        public string Password { get; set; }    
         public string? Address { get; set; }
-        public string Phone { get; set; }
-
-        public List<Order> Orders { get; set; }
+		[ForeignKey("ApplicationUser")]
+		public int UserFK { get; set; }
+		public ApplicationUser ApplicationUser { get; set; }
+		public List<Order> Orders { get; set; }
         public Cart Cart { get; set; }
 
     }

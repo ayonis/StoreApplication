@@ -9,10 +9,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using StoreApplication.Configuration;
 using StoreApplication.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace Store
 {
-    public class Store_DB : DbContext
+    public class Store_DB : IdentityDbContext<ApplicationUser,ApplicationRole,int>
     {
         private readonly IConfiguration _configuration;
 
@@ -27,7 +29,8 @@ namespace Store
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            new CustomerEntityTypeConfiguration().Configure(modelBuilder.Entity<Customer>());
+			base.OnModelCreating(modelBuilder);
+			new CustomerEntityTypeConfiguration().Configure(modelBuilder.Entity<Customer>());
 
             new ItemEntityTypeConfiguration().Configure(modelBuilder.Entity<Item>());
 

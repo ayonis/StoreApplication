@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Store.Interfaces;
 using Store.Models;
 using Store.Services;
@@ -24,8 +25,7 @@ namespace StoreApplication.Controllers
         {
             return Json(_CategoryService.GetRecordById(id));
         }
-
-
+       
         [HttpPost]
         public IActionResult Create( Category category)
         {

@@ -24,16 +24,6 @@ namespace Store.Controllers
 
 
 
-            Employee Item = new Employee { 
-                                    Name = "Hassan Hassan" 
-                                   , Password ="1234" 
-                                   , Address = "Naser City, Cairo"
-                                   , Privilige = 1 
-                                   ,Phone ="0102563987"
-                                   ,SSN ="12345678963214"
-                                   , Username = "aALy"
-            };
-
 
           //  _employeeService.AddRecord(Item);
 

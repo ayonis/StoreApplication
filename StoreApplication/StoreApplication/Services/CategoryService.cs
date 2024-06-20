@@ -9,9 +9,9 @@ namespace Store.Services
     {
         protected Store_DB context;
 
-        public CategoryService(IConfiguration configuration)
+        public CategoryService( Store_DB contxt)
         {
-            context = new Store_DB(configuration);
+            context = contxt;
         }
         public int AddRecord(Category record)
         {

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System.Reflection.Emit;
 
 
 namespace Store.Configuration
@@ -11,8 +12,10 @@ namespace Store.Configuration
             builder.HasKey(e => e.Id).HasName("PK_Employee");
             
             builder.Property(e => e.Name).IsRequired();
-            builder.Property(e => e.Password).HasDefaultValue("0000");
-            
-        }
+			builder.HasOne(e => e.ApplicationUser)
+				   .WithOne(u => u.Employee)
+				   .HasForeignKey<Employee>(e => e.UserFK)
+				   .OnDelete(DeleteBehavior.Cascade);
+		}
     }
 }

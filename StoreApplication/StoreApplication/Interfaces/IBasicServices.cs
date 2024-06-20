@@ -13,6 +13,7 @@ namespace Store.Interfaces
         short UpdateRecord(T record);
         short DeleteRecord(int id);
         public List<T> FindRecordsByCondition(Func<T, bool> predicate);
+
     }
 }
 

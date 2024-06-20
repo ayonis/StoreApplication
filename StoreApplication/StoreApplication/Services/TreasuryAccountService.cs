@@ -2,20 +2,21 @@
 using Microsoft.Extensions.Configuration;
 using Store;
 using Store.Interfaces;
+using StoreApplication.Interfaces;
 using StoreApplication.Models;
 
 namespace StoreApplication.Services
 {
-    public class TreasuryAccountService : IBasicServices<TreasuryAccount>
-    {
+    public class TreasuryAccountService : IBasicServiceTreasuryAccountExtention<TreasuryAccount>
+	{
         protected Store_DB context;
-        IConfiguration _Configuration;
-
-        public TreasuryAccountService(IConfiguration configuration)
+        IBasicServices<TreasuryTransaction> _TreasuryTransactionService;
+		public TreasuryAccountService(Store_DB contxt, IBasicServices<TreasuryTransaction> TreasuryTransactionService)
         {
-            context = new Store_DB(configuration);
-            _Configuration = configuration;
-        }
+            context = contxt;
+            _TreasuryTransactionService = TreasuryTransactionService;
+
+		}
 
         public int AddRecord(TreasuryAccount record)
         {
@@ -82,13 +83,13 @@ namespace StoreApplication.Services
         public short UpdateTreasuryAccountBalance(int treasuryId, int transactionId)
         {
             TreasuryAccount treasuryAccount = new TreasuryAccount();
-            TreasuryTransactionService treasuryTransactionService = new TreasuryTransactionService(_Configuration);
+           
             TreasuryTransaction treasuryTransaction = new TreasuryTransaction();
 
             treasuryAccount = GetRecordById(treasuryId);
 
 
-            treasuryTransaction = treasuryTransactionService.GetRecordById(transactionId);
+            treasuryTransaction = _TreasuryTransactionService.GetRecordById(transactionId);
 
             if (treasuryAccount == null || treasuryTransaction == null)
             {
